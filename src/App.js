@@ -7,7 +7,7 @@ const App =()=>{
     return (
         <div className="tc ">
             <h1>ROBOFRIENDS</h1>
-            <input type={"search"} placeholder='search robots' className="pa3 ba b--green bg-lightest-blue"/>
+            <searchField/>
             <CardList robots = {robots}/>
         </div>
     )
