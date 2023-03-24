@@ -5,9 +5,9 @@ import 'tachyons'
 
 const App =()=>{
     return (
-        <div>
+        <div className="tc ">
             <h1>ROBOFRIENDS</h1>
-            <input type={"search"}/>
+            <searchField/>
             <CardList robots = {robots}/>
         </div>
     )
