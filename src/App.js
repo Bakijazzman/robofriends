@@ -6,6 +6,8 @@ import 'tachyons'
 const App =()=>{
     return (
         <div>
+            <h1>ROBOFRIENDS</h1>
+            <input type={"search"}/>
             <CardList robots = {robots}/>
         </div>
     )
