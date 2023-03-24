@@ -1,10 +1,14 @@
 import React from "react";
-import cardList from "./cardList";
+import CardList from "./cardList";
+import { robots } from "./robots";
+import 'tachyons'
 
 const App =()=>{
     return (
         <div>
-
+            <h1>ROBOFRIENDS</h1>
+            <input type={"search"}/>
+            <CardList robots = {robots}/>
         </div>
     )
 }
