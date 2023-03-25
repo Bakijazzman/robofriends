@@ -13,7 +13,7 @@ class App extends React.Component{
         
     }  
     componentDidMount(){
-            fetch('http://jsonplaceholder.typicode.com/u(sers')
+            fetch('http://jsonplaceholder.typicode.com/users')
             .then(response=>response.json())
             .then(users=> this.state.robots.setState({robots:users}))
         }
