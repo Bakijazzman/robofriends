@@ -31,7 +31,7 @@ class App extends React.Component{
                 <h1 className="f1">ROBOFRIENDS</h1>
                 <SearchField searchChange ={this.onSearchChange}/>
                 <Scroll>
-                <CardList robots = {filteredRobots}/>
+                 <CardList robots = {filteredRobots}/>
                 </Scroll>
             </div>
         )
