@@ -15,8 +15,11 @@ class App extends React.Component{
     }  
     componentDidMount(){
             fetch('http://jsonplaceholder.typicode.com/users')
-            .then(response=>response.json())
-            .then(users=> this.state.robots.setState({robots:users}))
+            .then(response=>
+                {return response.json()})
+            .then(users=> {
+                this.setState({robots:users})
+            })
         }
     onSearchChange=(event)=>{
             this.setState({searchField:event.target.value})
