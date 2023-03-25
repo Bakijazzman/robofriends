@@ -21,7 +21,7 @@ class App extends React.Component{
         })
         return (
             <div className="tc ">
-                <h1>ROBOFRIENDS</h1>
+                <h1 className="f1">ROBOFRIENDS</h1>
                 <SearchField searchChange ={this.onSearchChange}/>
                 <CardList robots = {filteredRobots}/>
             </div>
