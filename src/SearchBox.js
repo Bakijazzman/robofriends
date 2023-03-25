@@ -1,12 +1,15 @@
 import React from "react";
-import CardList from "./cardList";
-import { robots } from "./robots";
-const searchField= ()=>{
+
+const Search= ({searchField,searchChange})=>{
 return(
     <div>
-        <input type='search' placeHolder='search robots'/>
-        <CardList robots = {robots}/>
+        <input 
+        type='search' 
+        placeholder='search robots' 
+        className='bg-lightest-blue pa3 ba b--green'
+        onChange={searchChange}
+        />
     </div>
 )
 }
-export default searchField;
+export default Search;
