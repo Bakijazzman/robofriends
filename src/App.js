@@ -11,10 +11,16 @@ class App extends React.Component{
             searchField: ''
         }
         
-    }
+    }  
+    componentDidMount(){
+            fetch('http://jsonplaceholder.typicode.com/users')
+            .then(response=>response.json())
+            .then(users=> this.state.robots.setState({robots:users}))
+        }
     onSearchChange=(event)=>{
             this.setState({searchField:event.target.value})
         }
+      
     render(){
         const filteredRobots = this.state.robots.filter(robots=>{
             return robots.name.toLowerCase().includes(this.state.searchField.toLowerCase())
