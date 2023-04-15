@@ -15,3 +15,4 @@ const card = ({name,username,email,id}) =>{
 }
 
 export default card;
+for<var i=0; i=index.length i++>
